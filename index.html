@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="United International School - Curriculum and Learning Resources">
+  <title>United International School | Learning Resources</title>
+  <link rel="icon" href="assets/school-logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>United International School</span>
+        <span>Learning • Excellence • Opportunity</span>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="#home" aria-label="United International School home">
+          <img src="assets/school-logo.jpg" alt="United International School logo">
+          <div>
+            <strong>UNITED</strong>
+            <span>INTERNATIONAL SCHOOL</span>
+          </div>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <div class="nav-dropdown">
+            <button class="drop-btn">Curriculum ▾</button>
+            <div class="dropdown-menu">
+              <a href="#curriculum">Overview</a>
+              <a href="#grades">Grade / Year Levels</a>
+              <a href="#subjects">Subjects</a>
+            </div>
+          </div>
+          <a href="#resources">Resources</a>
+          <div class="nav-dropdown">
+            <button class="drop-btn">Mathematics ▾</button>
+            <div class="dropdown-menu">
+              <a href="#math">Mathematics Hub</a>
+              <a href="#grades">Grade 11</a>
+              <a href="#grades">Grade 12</a>
+            </div>
+          </div>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">UNITED INTERNATIONAL SCHOOL</p>
+          <h1>Learning resources for every learner.</h1>
+          <p class="hero-text">
+            A central place for curriculum information, subject resources,
+            mathematics materials, revision and downloadable learning support.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#resources">Explore Resources</a>
+            <a class="btn btn-light" href="#curriculum">View Curriculum</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/school-logo.jpg" alt="United International School crest">
+          <h2>United International School</h2>
+          <p>Curriculum & Learning Portal</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <div class="container quick-grid">
+        <a href="#curriculum"><span>01</span><strong>Curriculum</strong><small>Explore programmes and learning pathways</small></a>
+        <a href="#subjects"><span>02</span><strong>Subjects</strong><small>Browse subject areas and materials</small></a>
+        <a href="#math"><span>03</span><strong>Mathematics</strong><small>Access mathematics learning resources</small></a>
+        <a href="#resources"><span>04</span><strong>Resources</strong><small>Worksheets, revision and downloads</small></a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">ABOUT OUR SCHOOL</p>
+          <h2>A connected learning community.</h2>
+        </div>
+        <div>
+          <p>
+            United International School provides a supportive environment where
+            students can develop academic knowledge, confidence and independent
+            learning skills.
+          </p>
+          <p>
+            This portal is designed to make curriculum information and learning
+            resources simple to find for students, teachers and families.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">CURRICULUM</p>
+            <h2>Explore the learning programme</h2>
+          </div>
+          <p>Use the sections below as the starting point for curriculum planning and student support.</p>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <div class="card-number">01</div>
+            <h3>Primary</h3>
+            <p>Foundational learning, core skills and preparation for secondary study.</p>
+            <a href="#grades">Explore levels →</a>
+          </article>
+          <article class="card">
+            <div class="card-number">02</div>
+            <h3>Secondary</h3>
+            <p>Structured subject learning, assessment preparation and academic progression.</p>
+            <a href="#grades">Explore levels →</a>
+          </article>
+          <article class="card">
+            <div class="card-number">03</div>
+            <h3>Senior School</h3>
+            <p>Advanced subject study, examination preparation and pathways beyond school.</p>
+            <a href="#grades">Explore levels →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="grades" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">GRADE / YEAR LEVELS</p>
+            <h2>Find resources by grade</h2>
+          </div>
+          <input id="gradeSearch" class="search-box" type="search" placeholder="Search grades or topics..." aria-label="Search grades">
+        </div>
+        <div class="grade-grid" id="gradeGrid">
+          <a class="grade-card" data-search="grade 7 year 8" href="#resources"><span>Grade 7</span><small>Lower Secondary</small></a>
+          <a class="grade-card" data-search="grade 8 year 9" href="#resources"><span>Grade 8</span><small>Lower Secondary</small></a>
+          <a class="grade-card" data-search="grade 9 year 10" href="#resources"><span>Grade 9</span><small>Lower Secondary</small></a>
+          <a class="grade-card" data-search="grade 10 year 11" href="#resources"><span>Grade 10</span><small>Secondary</small></a>
+          <a class="grade-card" data-search="grade 11 year 12 mathematics" href="#math"><span>Grade 11</span><small>Senior Secondary</small></a>
+          <a class="grade-card" data-search="grade 12 year 13 mathematics" href="#math"><span>Grade 12</span><small>Senior Secondary</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section section-dark">
+      <div class="container">
+        <p class="section-kicker">SUBJECTS</p>
+        <h2>Subject learning hubs</h2>
+        <div class="subject-grid">
+          <a href="#math"><strong>Mathematics</strong><span>Problem solving & applications →</span></a>
+          <a href="#resources"><strong>English</strong><span>Language & literature →</span></a>
+          <a href="#resources"><strong>Science</strong><span>Investigation & understanding →</span></a>
+          <a href="#resources"><strong>ICT / Computing</strong><span>Digital skills & technology →</span></a>
+          <a href="#resources"><strong>Humanities</strong><span>People, places & societies →</span></a>
+          <a href="#resources"><strong>Languages</strong><span>Communication & culture →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="math" class="section math-section">
+      <div class="container">
+        <div class="math-header">
+          <div>
+            <p class="section-kicker">MATHEMATICS HUB</p>
+            <h2>Mathematics resources</h2>
+            <p>Organise mathematics materials by grade, topic and resource type.</p>
+          </div>
+          <div class="math-badge">MATH<br><span>HUB</span></div>
+        </div>
+
+        <div class="math-grid">
+          <article class="math-card">
+            <span>GRADE 11</span>
+            <h3>Core Mathematics</h3>
+            <p>Functions, coordinate geometry, trigonometry, quadratics, logarithms and more.</p>
+            <a href="#resources">View resources →</a>
+          </article>
+          <article class="math-card">
+            <span>GRADE 12</span>
+            <h3>Advanced Mathematics</h3>
+            <p>Senior-level topics, examination preparation, practice and revision resources.</p>
+            <a href="#resources">View resources →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">LEARNING RESOURCES</p>
+            <h2>Search and organise resources</h2>
+          </div>
+          <select id="resourceFilter" class="filter-box" aria-label="Filter resources">
+            <option value="all">All resources</option>
+            <option value="worksheet">Worksheets</option>
+            <option value="lesson">Lesson resources</option>
+            <option value="revision">Revision</option>
+            <option value="presentation">Presentations</option>
+          </select>
+        </div>
+
+        <div class="resource-list" id="resourceList">
+          <article class="resource-item" data-type="worksheet">
+            <div><span class="tag">WORKSHEET</span><h3>Mathematics Practice Worksheets</h3><p>Topic-based practice materials for students.</p></div>
+            <a href="#" class="resource-btn" onclick="showNotice(event)">Open</a>
+          </article>
+          <article class="resource-item" data-type="lesson">
+            <div><span class="tag">LESSON</span><h3>Lesson Planning Resources</h3><p>Structured activities, objectives, outcomes and plenaries.</p></div>
+            <a href="#" class="resource-btn" onclick="showNotice(event)">Open</a>
+          </article>
+          <article class="resource-item" data-type="revision">
+            <div><span class="tag">REVISION</span><h3>Exam Revision Materials</h3><p>Revision notes, questions and examination practice.</p></div>
+            <a href="#" class="resource-btn" onclick="showNotice(event)">Open</a>
+          </article>
+          <article class="resource-item" data-type="presentation">
+            <div><span class="tag">PRESENTATION</span><h3>Teaching Presentations</h3><p>Slides and classroom presentation resources.</p></div>
+            <a href="#" class="resource-btn" onclick="showNotice(event)">Open</a>
+          </article>
+        </div>
+        <p class="resource-note">Resource buttons are ready to be connected to your actual PDF, Word, PowerPoint or worksheet files.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">CONTACT</p>
+          <h2>United International School</h2>
+          <p>School information and contact details can be added here.</p>
+        </div>
+        <div class="contact-box">
+          <p><strong>Address</strong><br>School address goes here</p>
+          <p><strong>Email</strong><br>school@example.com</p>
+          <p><strong>Phone</strong><br>+968 XXXX XXXX</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/school-logo.jpg" alt="">
+        <div><strong>United International School</strong><small>Curriculum & Learning Portal</small></div>
+      </div>
+      <p>© <span id="year"></span> United International School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="notice" class="notice" role="status">Connect this button to your resource file or page.</div>
+  <script src="script.js"></script>
+</body>
+</html>
